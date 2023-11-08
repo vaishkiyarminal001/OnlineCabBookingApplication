@@ -2,11 +2,16 @@ package com.app.models;
 
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -16,89 +21,115 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class Customer {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long customerId;
-    private String customerName;
-    
-    private String emailId;
-    
-    private String password;
-    
-    private String customerMobileNo;
+	 @Id
+	    @GeneratedValue(strategy = GenerationType.IDENTITY)
+	    private Long customerId;
 
-    @OneToMany(mappedBy = "customer")
-    private List<Booking> bookings;
+	    
 
-	public Customer(String customerName, String emailId, String password, String customerMobileNo,
-			List<Booking> bookings) {
-		super();
-		this.customerName = customerName;
-		this.emailId = emailId;
-		this.password = password;
-		this.customerMobileNo = customerMobileNo;
-		this.bookings = bookings;
-	}
+	    @NotBlank(message = "Customer name is required")
+	    private String customerName;
 
-	public Customer() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
+	    @Email(message = "Invalid email format")
+	    private String email;
 
-	public Long getCustomerId() {
-		return customerId;
-	}
+	    @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
+	    @NotBlank(message = "Password is required")
+	    private String password;
+	    
+	    @NotBlank(message = "Customer name is required")
+	    private String customerMobileNo;
 
-	public void setCustomerId(Long customerId) {
-		this.customerId = customerId;
-	}
+	    private String role = "CUSTOMER";
+	    
 
-	public String getCustomerName() {
-		return customerName;
-	}
+	    @JsonIgnore
+	    @OneToMany(mappedBy = "customer")
+	    private List<Booking> bookings;
 
-	public void setCustomerName(String customerName) {
-		this.customerName = customerName;
-	}
+	    
+		public Customer(String customerName, String emailId, String password, String customerMobileNo,
+				List<Booking> bookings) {
+			super();
+			this.customerName = customerName;
+			this.email = emailId;
+			this.password = password;
+			this.customerMobileNo = customerMobileNo;
+			this.bookings = bookings;
+		}
 
-	public String getEmailId() {
-		return emailId;
-	}
+		public Customer() {
+			super();
+			// TODO Auto-generated constructor stub
+		}
 
-	public void setEmailId(String emailId) {
-		this.emailId = emailId;
-	}
+		public Long getCustomerId() {
+			return customerId;
+		}
 
-	public String getPassword() {
-		return password;
-	}
+		public void setCustomerId(Long customerId) {
+			this.customerId = customerId;
+		}
 
-	public void setPassword(String password) {
-		this.password = password;
-	}
+		public String getCustomerName() {
+			return customerName;
+		}
 
-	public String getCustomerMobileNo() {
-		return customerMobileNo;
-	}
+		public void setCustomerName(String customerName) {
+			this.customerName = customerName;
+		}
 
-	public void setCustomerMobileNo(String customerMobileNo) {
-		this.customerMobileNo = customerMobileNo;
-	}
+		public String getEmail() {
+			return email;
+		}
 
-	public List<Booking> getBookings() {
-		return bookings;
-	}
+		public void setEmail(String email) {
+			this.email = email;
+		}
 
-	public void setBookings(List<Booking> bookings) {
-		this.bookings = bookings;
-	}
+		public String getPassword() {
+			return password;
+		}
 
-	@Override
-	public String toString() {
-		return "Customer [customerId=" + customerId + ", customerName=" + customerName + ", emailId=" + emailId
-				+ ", password=" + password + ", customerMobileNo=" + customerMobileNo + ", bookings=" + bookings + "]";
-	}
-    
+		public void setPassword(String password) {
+			this.password = password;
+		}
+
+		public String getCustomerMobileNo() {
+			return customerMobileNo;
+		}
+
+		public void setCustomerMobileNo(String customerMobileNo) {
+			this.customerMobileNo = customerMobileNo;
+		}
+
+		public List<Booking> getBookings() {
+			return bookings;
+		}
+
+		public void setBookings(List<Booking> bookings) {
+			this.bookings = bookings;
+		}
+		
+		
+
+		public String getRole() {
+			return role;
+		}
+
+		public void setRole(String role) {
+			this.role = role;
+		}
+
+		@Override
+		public String toString() {
+			return "Customer [customerId=" + customerId + ", customerName=" + customerName + ", email=" + email
+					+ ", password=" + password + ", customerMobileNo=" + customerMobileNo + ", bookings=" + bookings + "]";
+		}
+	    
+	    
+	    
+	    
     
     
     
