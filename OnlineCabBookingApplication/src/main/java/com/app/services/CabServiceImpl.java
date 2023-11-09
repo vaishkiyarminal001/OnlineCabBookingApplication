@@ -3,6 +3,7 @@ package com.app.services;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.app.exceptions.CabException;
 import com.app.models.Cab;
@@ -10,6 +11,7 @@ import com.app.models.Driver;
 import com.app.repositories.CabRepository;
 import com.app.repositories.DriverRepository;
 
+@Service
 public class CabServiceImpl implements CabService {
 
     @Autowired

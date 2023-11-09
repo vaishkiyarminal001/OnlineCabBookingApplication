@@ -1,76 +1,114 @@
-2023-11-08T20:43:08.968+05:30  INFO 14320 --- [main] com.app.OnlineCabBookingApplication      : Starting OnlineCabBookingApplication using Java 17.0.8.1 with PID 14320 (C:\Users\asus\Desktop\OnlineCabBookingApplication\OnlineCabBookingApplication\target\classes started by asus in C:\Users\asus\Desktop\OnlineCabBookingApplication\OnlineCabBookingApplication)
-2023-11-08T20:43:08.981+05:30  INFO 14320 --- [main] com.app.OnlineCabBookingApplication      : No active profile set, falling back to 1 default profile: "default"
-2023-11-08T20:43:10.302+05:30  INFO 14320 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-11-08T20:43:10.423+05:30  INFO 14320 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 106 ms. Found 5 JPA repository interfaces.
-2023-11-08T20:43:11.344+05:30  INFO 14320 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-11-08T20:43:11.358+05:30  INFO 14320 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-11-08T20:43:11.358+05:30  INFO 14320 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
-2023-11-08T20:43:11.497+05:30  INFO 14320 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-11-08T20:43:11.497+05:30  INFO 14320 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2367 ms
-2023-11-08T20:43:11.714+05:30  INFO 14320 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-11-08T20:43:11.847+05:30  INFO 14320 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
-2023-11-08T20:43:11.851+05:30  INFO 14320 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
-2023-11-08T20:43:12.250+05:30  INFO 14320 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2023-11-08T20:43:12.288+05:30  INFO 14320 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-11-08T20:43:12.756+05:30  INFO 14320 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@60a6840c
-2023-11-08T20:43:12.759+05:30  INFO 14320 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-11-08T20:43:14.370+05:30  INFO 14320 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2023-11-08T20:43:14.647+05:30  INFO 14320 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-11-08T20:43:15.371+05:30  WARN 14320 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-11-08T20:43:15.876+05:30  WARN 14320 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
-
-Using generated security password: e3254151-3b5f-49ae-9991-3b3ba9abe4c6
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-2023-11-08T20:43:16.039+05:30  INFO 14320 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@fd8513b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@18372705, org.springframework.security.web.context.SecurityContextHolderFilter@5e1d3188, org.springframework.security.web.header.HeaderWriterFilter@7200702, org.springframework.security.web.csrf.CsrfFilter@aeb8ee2, org.springframework.security.web.authentication.logout.LogoutFilter@5db6083b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@31c17fd4, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@126ae0ca, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@418f0f27, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@25865fca, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7306836f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@36003e90, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@427946b9, org.springframework.security.web.access.ExceptionTranslationFilter@3095c449, org.springframework.security.web.access.intercept.AuthorizationFilter@628af295]
-2023-11-08T20:43:16.087+05:30  WARN 14320 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
-2023-11-08T20:43:16.089+05:30  INFO 14320 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-11-08T20:43:16.091+05:30  INFO 14320 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2023-11-08T20:43:16.099+05:30  INFO 14320 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2023-11-08T20:43:16.102+05:30  INFO 14320 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2023-11-08T20:43:16.117+05:30  INFO 14320 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
-
-Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
-2023-11-08T20:43:16.142+05:30 ERROR 14320 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-Web server failed to start. Port 8080 was already in use.
-
-Action:
-
-Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
-
-2023-11-08T20:43:40.976+05:30  INFO 17724 --- [main] com.app.OnlineCabBookingApplication      : Starting OnlineCabBookingApplication using Java 17.0.8.1 with PID 17724 (C:\Users\asus\Desktop\OnlineCabBookingApplication\OnlineCabBookingApplication\target\classes started by asus in C:\Users\asus\Desktop\OnlineCabBookingApplication\OnlineCabBookingApplication)
-2023-11-08T20:43:40.981+05:30  INFO 17724 --- [main] com.app.OnlineCabBookingApplication      : No active profile set, falling back to 1 default profile: "default"
-2023-11-08T20:43:42.136+05:30  INFO 17724 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-11-08T20:43:42.233+05:30  INFO 17724 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 84 ms. Found 5 JPA repository interfaces.
-2023-11-08T20:43:42.965+05:30  INFO 17724 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-11-08T20:43:42.980+05:30  INFO 17724 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-11-08T20:43:42.980+05:30  INFO 17724 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
-2023-11-08T20:43:43.154+05:30  INFO 17724 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-11-08T20:43:43.156+05:30  INFO 17724 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2051 ms
-2023-11-08T20:43:43.424+05:30  INFO 17724 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-11-08T20:43:43.506+05:30  INFO 17724 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
-2023-11-08T20:43:43.509+05:30  INFO 17724 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
-2023-11-08T20:43:43.891+05:30  INFO 17724 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2023-11-08T20:43:43.933+05:30  INFO 17724 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-11-08T20:43:44.366+05:30  INFO 17724 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@36a58466
-2023-11-08T20:43:44.369+05:30  INFO 17724 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-11-08T20:43:45.954+05:30  INFO 17724 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2023-11-08T20:43:46.076+05:30  INFO 17724 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-11-08T20:43:46.778+05:30  WARN 17724 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-11-08T20:43:47.376+05:30  WARN 17724 --- [main] .s.s.UserDetailsServiceAutoConfiguration : 
-
-Using generated security password: 75f83cc7-b8fe-42ff-b404-81a7bf8e1cad
-
-This generated password is for development use only. Your security configuration must be updated before running your application in production.
-
-2023-11-08T20:43:47.545+05:30  INFO 17724 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2ab87cb8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4ac1544f, org.springframework.security.web.context.SecurityContextHolderFilter@1695f7cb, org.springframework.security.web.header.HeaderWriterFilter@475c2f47, org.springframework.security.web.csrf.CsrfFilter@77228160, org.springframework.security.web.authentication.logout.LogoutFilter@189c6683, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5ab0168, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@71dac63f, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4578d654, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@cbd9494, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@236bb278, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5e1d3188, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@25865fca, org.springframework.security.web.access.ExceptionTranslationFilter@5481001f, org.springframework.security.web.access.intercept.AuthorizationFilter@68312b85]
-2023-11-08T20:43:47.644+05:30  INFO 17724 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-11-08T20:43:47.659+05:30  INFO 17724 --- [main] com.app.OnlineCabBookingApplication      : Started OnlineCabBookingApplication in 7.294 seconds (process running for 8.494)
+2023-11-09T00:01:36.639+05:30  INFO 18400 --- [RMI TCP Connection(18)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-11-09T00:01:36.664+05:30  INFO 18400 --- [RMI TCP Connection(18)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-11-09T00:01:36.666+05:30  INFO 18400 --- [RMI TCP Connection(18)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-11-09T00:01:36.676+05:30  INFO 18400 --- [RMI TCP Connection(18)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-11-09T00:01:36.679+05:30  INFO 18400 --- [RMI TCP Connection(18)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-11-09T00:01:36.693+05:30  INFO 18400 --- [RMI TCP Connection(18)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-11-09T00:01:39.511+05:30  INFO 21228 --- [main] com.app.OnlineCabBookingApplication      : Starting OnlineCabBookingApplication using Java 17.0.8.1 with PID 21228 (C:\Users\asus\Desktop\OnlineCabBookingApplication\OnlineCabBookingApplication\target\classes started by asus in C:\Users\asus\Desktop\OnlineCabBookingApplication\OnlineCabBookingApplication)
+2023-11-09T00:01:39.516+05:30  INFO 21228 --- [main] com.app.OnlineCabBookingApplication      : No active profile set, falling back to 1 default profile: "default"
+2023-11-09T00:01:40.447+05:30  INFO 21228 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-09T00:01:40.538+05:30  INFO 21228 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 82 ms. Found 5 JPA repository interfaces.
+2023-11-09T00:01:41.177+05:30  INFO 21228 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-11-09T00:01:41.198+05:30  INFO 21228 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-09T00:01:41.199+05:30  INFO 21228 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-11-09T00:01:41.359+05:30  INFO 21228 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-09T00:01:41.360+05:30  INFO 21228 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1742 ms
+2023-11-09T00:01:41.594+05:30  INFO 21228 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-11-09T00:01:41.689+05:30  INFO 21228 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2023-11-09T00:01:41.692+05:30  INFO 21228 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-11-09T00:01:42.086+05:30  INFO 21228 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-11-09T00:01:42.127+05:30  INFO 21228 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-11-09T00:01:42.500+05:30  INFO 21228 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1f1fbc9f
+2023-11-09T00:01:42.504+05:30  INFO 21228 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-11-09T00:01:43.960+05:30  INFO 21228 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-11-09T00:01:44.080+05:30  INFO 21228 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-09T00:01:44.676+05:30  WARN 21228 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-09T00:01:45.027+05:30  INFO 21228 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4bfaff23, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@47bae235, org.springframework.security.web.context.SecurityContextHolderFilter@37e967df, org.springframework.security.web.header.HeaderWriterFilter@2e41e0c, org.springframework.web.filter.CorsFilter@7f588bc6, org.springframework.security.web.authentication.logout.LogoutFilter@1d4b0a07, com.app.config.JwtTokenValidatorFilter@3da8a302, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@42c9c0a1, com.app.config.JwtTokenGeneratorFilter@21b75073, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@395854dd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@67836d4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@318ca53a, org.springframework.security.web.session.SessionManagementFilter@19370af1, org.springframework.security.web.access.ExceptionTranslationFilter@6c289070, org.springframework.security.web.access.intercept.AuthorizationFilter@40a2fdd2]
+2023-11-09T00:01:45.359+05:30  INFO 21228 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-09T00:01:45.369+05:30  INFO 21228 --- [main] com.app.OnlineCabBookingApplication      : Started OnlineCabBookingApplication in 6.395 seconds (process running for 7.466)
+2023-11-09T00:08:12.614+05:30  INFO 21228 --- [RMI TCP Connection(10)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-11-09T00:08:12.627+05:30  INFO 21228 --- [RMI TCP Connection(10)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-11-09T00:08:12.637+05:30  INFO 21228 --- [RMI TCP Connection(10)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-11-09T00:08:12.639+05:30  INFO 21228 --- [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-11-09T00:08:12.648+05:30  INFO 21228 --- [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-11-09T11:09:28.393+05:30  INFO 15604 --- [main] com.app.OnlineCabBookingApplication      : Starting OnlineCabBookingApplication using Java 17.0.8.1 with PID 15604 (C:\Users\asus\Desktop\OnlineCabBookingApplication\OnlineCabBookingApplication\target\classes started by asus in C:\Users\asus\Desktop\OnlineCabBookingApplication\OnlineCabBookingApplication)
+2023-11-09T11:09:28.398+05:30  INFO 15604 --- [main] com.app.OnlineCabBookingApplication      : No active profile set, falling back to 1 default profile: "default"
+2023-11-09T11:09:30.071+05:30  INFO 15604 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-09T11:09:30.232+05:30  INFO 15604 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 143 ms. Found 5 JPA repository interfaces.
+2023-11-09T11:09:31.187+05:30  INFO 15604 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-11-09T11:09:31.205+05:30  INFO 15604 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-09T11:09:31.205+05:30  INFO 15604 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-11-09T11:09:31.407+05:30  INFO 15604 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-09T11:09:31.408+05:30  INFO 15604 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2831 ms
+2023-11-09T11:09:31.768+05:30  INFO 15604 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-11-09T11:09:31.936+05:30  INFO 15604 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2023-11-09T11:09:31.941+05:30  INFO 15604 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-11-09T11:09:32.957+05:30  INFO 15604 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-11-09T11:09:33.061+05:30  INFO 15604 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-11-09T11:09:33.747+05:30  INFO 15604 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@24b3f778
+2023-11-09T11:09:33.751+05:30  INFO 15604 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-11-09T11:09:36.377+05:30  INFO 15604 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-11-09T11:09:36.513+05:30  INFO 15604 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-09T11:09:37.330+05:30  WARN 15604 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-09T11:09:37.820+05:30  INFO 15604 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3da8a302, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@21b75073, org.springframework.security.web.context.SecurityContextHolderFilter@53b60595, org.springframework.security.web.header.HeaderWriterFilter@43a9988a, org.springframework.web.filter.CorsFilter@318ca53a, org.springframework.security.web.authentication.logout.LogoutFilter@7af5ce66, com.app.config.JwtTokenValidatorFilter@ab11e76, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4bfaff23, com.app.config.JwtTokenGeneratorFilter@72f91c91, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7d7d7b1a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@36d7e8d2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@69d6fe75, org.springframework.security.web.session.SessionManagementFilter@37e967df, org.springframework.security.web.access.ExceptionTranslationFilter@2e214d39, org.springframework.security.web.access.intercept.AuthorizationFilter@335cbcbd]
+2023-11-09T11:09:38.247+05:30  INFO 15604 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-09T11:09:38.260+05:30  INFO 15604 --- [main] com.app.OnlineCabBookingApplication      : Started OnlineCabBookingApplication in 10.655 seconds (process running for 12.245)
+2023-11-09T11:09:48.677+05:30  INFO 15604 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-09T11:09:48.679+05:30  INFO 15604 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-09T11:09:48.683+05:30  INFO 15604 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2023-11-09T11:09:48.708+05:30 DEBUG 15604 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /swagger-ui/index.html
+2023-11-09T11:09:48.736+05:30 DEBUG 15604 --- [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2023-11-09T11:09:48.765+05:30 DEBUG 15604 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /swagger-ui/index.html
+2023-11-09T11:09:48.930+05:30 DEBUG 15604 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /swagger-ui/swagger-ui.css
+2023-11-09T11:09:48.933+05:30 DEBUG 15604 --- [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2023-11-09T11:09:48.938+05:30 DEBUG 15604 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /swagger-ui/swagger-ui.css
+2023-11-09T11:09:48.961+05:30 DEBUG 15604 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /swagger-ui/swagger-ui-bundle.js
+2023-11-09T11:09:48.964+05:30 DEBUG 15604 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /swagger-ui/index.css
+2023-11-09T11:09:48.964+05:30 DEBUG 15604 --- [http-nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2023-11-09T11:09:48.964+05:30 DEBUG 15604 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /swagger-ui/swagger-ui-standalone-preset.js
+2023-11-09T11:09:48.965+05:30 DEBUG 15604 --- [http-nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2023-11-09T11:09:48.967+05:30 DEBUG 15604 --- [http-nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2023-11-09T11:09:48.968+05:30 DEBUG 15604 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /swagger-ui/swagger-ui-standalone-preset.js
+2023-11-09T11:09:48.968+05:30 DEBUG 15604 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /swagger-ui/swagger-ui-bundle.js
+2023-11-09T11:09:48.975+05:30 DEBUG 15604 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /swagger-ui/index.css
+2023-11-09T11:09:48.979+05:30 DEBUG 15604 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /swagger-ui/swagger-initializer.js
+2023-11-09T11:09:48.981+05:30 DEBUG 15604 --- [http-nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2023-11-09T11:09:48.985+05:30 DEBUG 15604 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /swagger-ui/swagger-initializer.js
+2023-11-09T11:09:50.850+05:30 DEBUG 15604 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /v3/api-docs/swagger-config
+2023-11-09T11:09:50.851+05:30 DEBUG 15604 --- [http-nio-8080-exec-7] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2023-11-09T11:09:50.855+05:30 DEBUG 15604 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /v3/api-docs/swagger-config
+2023-11-09T11:09:50.913+05:30 DEBUG 15604 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /swagger-ui/favicon-32x32.png
+2023-11-09T11:09:50.916+05:30 DEBUG 15604 --- [http-nio-8080-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2023-11-09T11:09:50.921+05:30 DEBUG 15604 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /swagger-ui/favicon-32x32.png
+2023-11-09T11:09:51.161+05:30 DEBUG 15604 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /v3/api-docs
+2023-11-09T11:09:51.162+05:30 DEBUG 15604 --- [http-nio-8080-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2023-11-09T11:09:51.163+05:30 DEBUG 15604 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /v3/api-docs
+2023-11-09T11:09:51.909+05:30  INFO 15604 --- [http-nio-8080-exec-9] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 724 ms
+2023-11-09T11:22:38.140+05:30  INFO 15604 --- [RMI TCP Connection(15)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-11-09T11:22:38.162+05:30  INFO 15604 --- [RMI TCP Connection(15)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-11-09T11:22:38.165+05:30  INFO 15604 --- [RMI TCP Connection(15)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-11-09T11:22:38.177+05:30  INFO 15604 --- [RMI TCP Connection(15)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-11-09T11:22:38.180+05:30  INFO 15604 --- [RMI TCP Connection(15)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-11-09T11:22:38.197+05:30  INFO 15604 --- [RMI TCP Connection(15)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-11-09T11:22:41.996+05:30  INFO 19324 --- [main] com.app.OnlineCabBookingApplication      : Starting OnlineCabBookingApplication using Java 17.0.8.1 with PID 19324 (C:\Users\asus\Desktop\OnlineCabBookingApplication\OnlineCabBookingApplication\target\classes started by asus in C:\Users\asus\Desktop\OnlineCabBookingApplication\OnlineCabBookingApplication)
+2023-11-09T11:22:42.000+05:30  INFO 19324 --- [main] com.app.OnlineCabBookingApplication      : No active profile set, falling back to 1 default profile: "default"
+2023-11-09T11:22:43.107+05:30  INFO 19324 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-09T11:22:43.206+05:30  INFO 19324 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 90 ms. Found 5 JPA repository interfaces.
+2023-11-09T11:22:43.939+05:30  INFO 19324 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-11-09T11:22:43.952+05:30  INFO 19324 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-09T11:22:43.953+05:30  INFO 19324 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2023-11-09T11:22:44.153+05:30  INFO 19324 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-09T11:22:44.154+05:30  INFO 19324 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2028 ms
+2023-11-09T11:22:44.504+05:30  INFO 19324 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-11-09T11:22:44.640+05:30  INFO 19324 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.13.Final
+2023-11-09T11:22:44.646+05:30  INFO 19324 --- [main] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-11-09T11:22:45.157+05:30  INFO 19324 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-11-09T11:22:45.208+05:30  INFO 19324 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-11-09T11:22:45.850+05:30  INFO 19324 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@846b47
+2023-11-09T11:22:45.855+05:30  INFO 19324 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-11-09T11:22:47.586+05:30  INFO 19324 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-11-09T11:22:47.707+05:30  INFO 19324 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-09T11:22:48.404+05:30  WARN 19324 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-09T11:22:48.835+05:30  INFO 19324 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@763a72da, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@50e32998, org.springframework.security.web.context.SecurityContextHolderFilter@5bbeb9e3, org.springframework.security.web.header.HeaderWriterFilter@6db59e26, org.springframework.web.filter.CorsFilter@5fc76532, org.springframework.security.web.authentication.logout.LogoutFilter@9423344, com.app.config.JwtTokenValidatorFilter@2e268c19, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@54ee423f, com.app.config.JwtTokenGeneratorFilter@baf87a5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@191cf38f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@67c912d3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@42c9c0a1, org.springframework.security.web.session.SessionManagementFilter@611ffa8d, org.springframework.security.web.access.ExceptionTranslationFilter@6e200307, org.springframework.security.web.access.intercept.AuthorizationFilter@7af5ce66]
+2023-11-09T11:22:49.252+05:30  INFO 19324 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-11-09T11:22:49.274+05:30  INFO 19324 --- [main] com.app.OnlineCabBookingApplication      : Started OnlineCabBookingApplication in 7.837 seconds (process running for 9.09)
