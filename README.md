@@ -1,5 +1,7 @@
 # OnlineCabBookingApplication
 
+<img align="right" alt="Coding" width="100%" src="/assests/cabmodel.png"><br>
+
 <h2>Features</h2><br>
 
 <h3>Driver Operations</h3><br>
