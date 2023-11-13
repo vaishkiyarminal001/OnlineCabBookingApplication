@@ -1,48 +1,48 @@
 # OnlineCabBookingApplication
 
-## Features <br>
+<h2>Features</h2><br>
 
-### Driver Operations<br>
-Update Driver 🚗 ✨
-Update Cab 🚕 ✨
-Driver Sign In 🔑 🚖
-Insert Cab To Driver 🚕 ➕ 🚖
-Add Driver 🚗 ➕ 🚖
-Get Driver Profile 🚗 👤
-Get All Bookings Of Driver 🚖 📚
-Delete Driver 🚗 ❌ 🚖
+<h3>Driver Operations</h3><br>
+Update Driver 🚗 ✨<br>
+Update Cab 🚕 ✨<br>
+Driver Sign In 🔑 🚖<br>
+Insert Cab To Driver 🚕 ➕ 🚖<br>
+Add Driver 🚗 ➕ 🚖<br>
+Get Driver Profile 🚗 👤<br>
+Get All Bookings Of Driver 🚖 📚<br>
+Delete Driver 🚗 ❌ 🚖<br>
 Delete Cab 🚕 ❌ 🚖<br><br>
 
 
-### Customer Operations<br>
-Update In Ride 🚗 ✨ 🚖
-Update Customer 👤 ✨
-Customer Sign In 🔑 👤
-Book a Ride 🚗 ➡️ 👤 🚖
-Add Customer 👤 ➕
-Get Customer Profile 👤 👤
-Get Bookings by Customer 👤 📚
-Get Bookings by Cab 🚖 📚
-Delete Ride 🚗 ❌ 👤
+<h3>Customer Operations</h3><br>
+Update In Ride 🚗 ✨ 🚖<br>
+Update Customer 👤 ✨<br>
+Customer Sign In 🔑 👤<br>
+Book a Ride 🚗 ➡️ 👤 🚖<br>
+Add Customer 👤 ➕<br>
+Get Customer Profile 👤 👤<br>
+Get Bookings by Customer 👤 📚<br>
+Get Bookings by Cab 🚖 📚<br>
+Delete Ride 🚗 ❌ 👤<br>
 Delete Customer 👤 ❌<br><br>
 
 
-### Admin Operations<br>
-Update Admin 👩‍💼 ✨
-Admin Sign In 🔑 👩‍💼
-Add Admin 👩‍💼 ➕
-Get All Previous Bookings 👤 📚
-Get All Drivers 🚗 📋
-Get All Customers 👤 📋
-Get All Bookings Of Driver 🚖 📚
-Get All Admins 👩‍💼 📋
-Get Admin Profile 👩‍💼 👤
-Delete Driver 🚗 ❌ 🚖
-Delete Customer Ride 👤 🚗 ❌
+<h3>Admin Operations</h3><br>
+Update Admin 👩‍💼 ✨<br>
+Admin Sign In 🔑 👩‍💼<br>
+Add Admin 👩‍💼 ➕<br>
+Get All Previous Bookings 👤 📚<br>
+Get All Drivers 🚗 📋<br>
+Get All Customers 👤 📋<br>
+Get All Bookings Of Driver 🚖 📚<br>
+Get All Admins 👩‍💼 📋<br>
+Get Admin Profile 👩‍💼 👤<br>
+Delete Driver 🚗 ❌ 🚖<br>
+Delete Customer Ride 👤 🚗 ❌<br>
 Delete Admin 👩‍💼 ❌<br><br>
 
 
-### Usage
+### Usage<br>
 Refer to the API documentation for detailed information on each feature and its functionality.
 
 Feel free to contribute to the development of this application. Happy coding! 🚗💨
