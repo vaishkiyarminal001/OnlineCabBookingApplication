@@ -1,0 +1,91 @@
+*{
+    /* background-color: black; */
+    font-family: 'Poppins', sans-serif;
+}
+
+nav{
+    /* border: 1px solid red; */
+    width: 100%;
+    box-shadow: rgba(244, 230, 230, 0.12) 0px 1px 3px, rgba(254, 253, 253, 0.24) 0px 1px 2px;
+    /* color: white; */
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+}
+
+body .box{
+    background-image: url("assets/carback.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    /* background: rgba(100,100,255,0.8); */
+    
+}
+
+.box{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+}
+
+.container{
+    border: 1px solid red;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px 0 15px;
+}
+
+span{
+    color: #fff;
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 10px 0;
+}
+
+header{
+    color: #fff;
+    font-size: 2rem;
+    display: flex;
+    padding: 10px 0 10px 0;
+}
+
+.input-field{
+    display: flex;
+    flex-direction: column;
+}
+
+.input{
+    height: 45px;
+    width: 87%;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    color: #fff;
+    padding: 0 0 0 45px;
+    margin-top: 5%;
+    background: rgba(255,255,255,0.1);
+}
+
+i{
+    position: relative;
+    top: -33px;
+    left: 17px;
+    color: #fff;
+}
+
+::-webkit-input-placeholder{
+    color: #fff;
+}
+
+.submit{
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    height: 45px;
+    outline: none;
+}
