@@ -3,22 +3,13 @@
     font-family: 'Poppins', sans-serif;
 }
 
-nav{
-    /* border: 1px solid red; */
-    width: 100%;
-    box-shadow: rgba(244, 230, 230, 0.12) 0px 1px 3px, rgba(254, 253, 253, 0.24) 0px 1px 2px;
-    /* color: white; */
-    display: flex;
-    justify-content: space-between;
-    font-size: 1.5rem;
-}
-
 body .box{
     background-image: url("assets/carback.jpeg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+    /* opacity: 0.7; */
     /* background: rgba(100,100,255,0.8); */
     
 }
@@ -32,19 +23,23 @@ body .box{
 }
 
 .container{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 350px;
     display: flex;
     flex-direction: column;
     padding: 0 15px 0 15px;
+    /* background: rgba(255,255,255,0.1); */
+
 }
 
 span{
+    /* border: 1px solid red; */
     color: #fff;
-    font-size: small;
+    font-size: medium;
     display: flex;
     justify-content: center;
     padding: 10px 0 10px 0;
+    /* background: rgba(255,255,255,0.1); */
 }
 
 header{
@@ -60,20 +55,21 @@ header{
 }
 
 .input{
+    border: 1px solid;
     height: 45px;
     width: 87%;
     border: none;
     outline: none;
     border-radius: 30px;
     color: #fff;
-    padding: 0 0 0 45px;
+    padding: 0 0 0 42px;
     margin-top: 5%;
     background: rgba(255,255,255,0.1);
 }
 
 i{
     position: relative;
-    top: -33px;
+    top: -31px;
     left: 17px;
     color: #fff;
 }
@@ -88,4 +84,90 @@ i{
     font-size: 15px;
     height: 45px;
     outline: none;
+    width: 100%;
+    margin-top: 2%;
+    cursor: pointer;
+    background: rgba(255,255,255,0.7);
+    transition: .3s;
+}
+
+.select{
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    height: 45px;
+    outline: none;
+    width: 50%;
+    margin-top: 2%;
+    cursor: pointer;
+    background: rgba(255,255,255,0.1);
+    color: #fff;
+    transition: .3s;
+}
+
+option{
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    height: 45px;
+    outline: none;
+    width: 50%;
+    margin-top: 2%;
+    cursor: pointer;
+    background: rgba(255,255,255,0.1);
+    color: #000;
+    transition: .3s;
+
+}
+
+.submit:hover{
+    box-shadow: 1px 5px 7px 1px rgba(232, 231, 231, 0.2);
+}
+
+.bottom{
+    /* border: 1px solid red; */
+    display:  flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: small;
+    margin-top: 3%;
+    color: #fff;
+}
+
+.left{
+    display: flex;
+}
+
+label a{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+/* Media Query */
+
+
+@media (max-width: 1080px) {
+
+    
+   
+    
+}
+
+@media (max-width: 998px){
+    
+
+}
+
+
+
+@media (max-width: 798px){
+   
+
+}
+
+@media (max-width: 520px){
+   
+    
 }
